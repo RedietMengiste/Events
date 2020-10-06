@@ -24,22 +24,43 @@
     <script src="script.js"></script>
 </head>
  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< <<<<<<<<<<< NAVIGATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+ 
+  <style >
+  #boxLogo {
+ border-radius: 5px;
+  margin-left: 40px;
+}
+  </style>
+   
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark row" style="margin-bottom: 0px">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light row">
-  <a class="navbar-brand col-md-10" href="#">Navbar</a>
+  <div class=" row col-md-10">
+    <div class="col-md-1" >
+      <img src="Zf.png" id="boxLogo"style="width: 50px ">
+    </div>
+    <div  class="col-md-8">
+      
+    </div>
+  </div>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <div class="row col-md-12">
-      
-      <a href="index.html">Back to index/events</a>
-    </div>
+    <form class="form-row col-md-12">
+      <!-- <button type="submit" class="btn btn-primary my-2 my-sm-0 col-md-6" onclick="scrollTo(0,300)" style="background-color: #1a1a2e">Sign-up</button> -->
+      <style>
+      	#atag{
+      		color: #efefef;
+  			text-decoration: none;
+      	}
+      </style>
+     <a  id="atag"class="my-2 my-sm-0 col-md-12 "  href="#"> Back to events </a>
+    
+      </form>
 </div>
-  </div>
 </nav>
-
 <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< nav end >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
 <body>
@@ -51,29 +72,31 @@
   			
   			<h1> No booked ticket yet</h1>
   			<!-- ........................................... -->
-		<button onclick="myFunction()">Try it</button>
+  	<div class="row">
+		<!-- <button onclick="myFunction()">Try it</button> --> <!-- this button should appear in events to buy goods , triggeing the card to be visible -->
 
-		<div id="myDIV" class="row">
-	      	<div class="card col-md-8" style="width: 18rem;" >
-		        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" class="card-img-top" alt="...">
-		          <div class="card-body">
-		            <h5 class="card-title">Card title</h5>
-		            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		            <a href="#" class="btn btn-primary">Go somewhere</a>
-		          </div>
-	    	</div>
-	    	
-	    		
-  <!-- //////////////////////////////////////////// timer ////////////////////////////////////////////////// -->
-  			<div class="col-md-4">
+	      	<div id="myDIV" class="card col-md-8" >
+		        <img src="https://images.unsplash.com/photo-1579460372796-3aa720f44e46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" class="card-img-top" alt="...">
+
+		        <div class="col-md-4" style="margin-top: 10px">
 			  	<p id="days"></p>
 			    <p id="hours"></p>
 			    <p id="mins"></p>
 			    <p id="secs"></p>
 			    <h2 id="end"></h2>
+			    <style>
+			    	p {
+			    		font-style: italic;
+			    		font-size: 20px;
+			    		font-family: sans-serif;
+			    		display: inline;
+			    		color: #444444;
+			    	}
+			    </style>
+
 			    <script>
 			    // The data/time we want to countdown to
-			    var countDownDate = new Date("Jul 25, 2021 00:00:00").getTime();
+			    var countDownDate = Date.now()+ 259200000;
 
 			    // Run myfunc every second
 			    var myfunc = setInterval(function() {
@@ -105,22 +128,37 @@
 			    }, 1000);
 			    </script>
 			  	</div>
+
+		          <div class=" card-body row">
+		            <a href="#" onclick="myFunction()" class="btn btn-primary col-md-5" style="margin-left: 20px">cancel</a><div class="col-md-1"></div>
+		            <a href="#" class="btn btn-primary col-md-5">Pay Now</a>
+		          </div>
+	    	</div>
+	    	
+	    		
+  <!-- //////////////////////////////////////////// timer ////////////////////////////////////////////////// -->
+  			
+	</div> <!-- inside row having two cols of timer and image -->
 <!-- /////////////////////////////////////////////////// timer end here/////////////////////////////////////////////////////////// -->
 	    	
-		</div> <!--row end here-->
+		
 
 
  	
   </div> <!-- end of left column  -->
+
+
   		<div class="col-md-6">
   			
   			<h1> No bought ticket yet </h1>
   			
-  		</div>
+  		</div> <!-- end of right col -->
+
+
+  	</div> <!--row end here-->
   		
-  	</div>
+  </div>  <!-- Container end -->
   	
-  </div>
 
 
 </body>
