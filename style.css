@@ -13,6 +13,9 @@ body { font-family: Arial, Helvetica, sans-serif; background:linear-gradient(to 
   scroll-behavior: smooth;
 }
 */
+.carouselBg{
+  background: rgba(0, 0, 0, 0.4);
+}
 
 /*####################################### Sign Up button>>>>>>>>>>>>>>>>>>>>>>>><>>>>>>>>>>>>>>>>>>>>>>> */
 /* Full-width input fields */
@@ -142,3 +145,62 @@ span.psw {
   background-color: lightblue;
   margin-top: 20px;
 }*/
+
+.page-footer{
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: #333333;
+  color: #efefef;
+}
+.footerRow li a{
+  color: #efefef;
+  text-decoration: none;
+}
+/*///////////////////////////////////////////////////////////////// card //////////////////////////////////////////////////////////*/
+
+.card {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+  
+  /*background-color: #008CBA;*/
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card:hover .image {
+  opacity: 0.3;
+}
+
