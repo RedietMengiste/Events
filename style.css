@@ -145,12 +145,13 @@ span.psw {
   background-color: lightblue;
   margin-top: 20px;
 }*/
-
+/*..............................................footer...........................................*/
 .page-footer{
   padding-left: 30px;
   padding-top: 30px;
   background-color: #333333;
   color: #efefef;
+  font-size: small;
 }
 .footerRow li a{
   color: #efefef;
