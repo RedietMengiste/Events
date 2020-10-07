@@ -8,11 +8,11 @@ h1 h2 h3 h4 h5{
 	margin: 7px;
 }
 .section2{
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
 }
 body{
 	/*background-color: #202020;*/
-	background:linear-gradient(to right,#D9AFD9, #97D9E1);
+	background: rgba(210, 220, 210, 1);
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: new time roman;
