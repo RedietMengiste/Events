@@ -1,0 +1,123 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1 h2 h3 h4 h5{
+	font-family:'candal', serif; 
+	color:#444;
+	margin: 7px;
+}
+.section2{
+	background: rgba(0, 0, 0, 0.8);
+}
+body{
+	/*background-color: #202020;*/
+	background:linear-gradient(to right,#D9AFD9, #97D9E1);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: new time roman;
+}
+/*#navbarResponsive{
+    font-size: 1.0em;
+    padding-right: 15%;
+    font-family:  apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 500;
+   text-transform: uppercase;
+   
+}
+.nav a{
+    color: black;
+    font-size: 1.05em;
+    padding-left: 5em;
+    font-family:  apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.navbar-nav{
+    padding-bottom: 1.5%;
+    border-bottom: solid 2px rgb(61, 57, 57);
+}
+.nav #navbarResponsive ul li a:hover{
+    color: rgb(61, 57, 57);   
+}
+
+
+.nav .navbar-brand:hover{
+    color: rgb(61, 57, 57);  
+}*/
+
+/*navigation*/
+
+/* post sliders*/
+.post-slider{
+	
+}
+.post-slider .slider-title{
+	text-align: center;
+	margin: 30px auto;
+	color: rgb(189, 184, 178);
+}
+.post-slider .next{
+	position: absolute;
+	top: 50%;
+	right:30px;
+	font-size: 2em;
+	color: #444;
+	cursor: pointer;
+}
+.post-slider .prev{
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	font-size: 2em;
+	color: #444;
+	cursor: pointer;
+}
+.post-slider .post-wrapper{
+	width:84%;
+	height: 280px;
+	overflow: hidden;
+	margin: 0px auto ;
+ 	
+ 	padding: 10px 0px 10px 0px;
+
+}
+.post-slider .post-wrapper .post{
+	height: 250px;
+	width: 250px;
+	margin: 0px 10px;
+	display: inline-block;
+	background:white;
+	border-radius: 5px;
+	box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+.post-slider .post-wrapper .post .post-info{
+	height: 100px;
+	
+	padding: 0px 5px;
+}
+.post-slider .post-wrapper .post .post-info a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 15px;
+	text-align: center;
+}
+.post-slider .post-wrapper .post .slider-image{
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/*..............................................footer...........................................*/
+.page-footer{
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: #333333;
+  color: #efefef;
+  font-size: small;
+}
+.footerRow li a{
+  color: #efefef;
+  text-decoration: none;
+}
